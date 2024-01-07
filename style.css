@@ -1,0 +1,88 @@
+.container{
+    display: flex;
+    justify-content: center;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Montserrat', sans-serif;
+    font-family: 'Mr Dafoe', cursive;
+    font-family: 'Poppins', sans-serif; */
+}
+
+h2{
+    color: #9e6066;
+}
+
+.my_todos{
+    min-width: 300px;
+    margin-block-start: 80px;
+    background-color: rgb(168, 168, 166);
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+    min-height: 300px;
+    border: 2px solid whitesmoke;
+}
+
+input{
+    border-radius: 25px;
+    min-width: 380px;
+    border: none;
+    background: white;
+    padding: 18px;
+    outline: none;
+    margin-block-end: 20px;
+}
+
+button{
+    margin-inline-start: -48px;
+    height: 49px;
+    min-width: 49px;
+    border-radius: 50%;
+    background: #070707;
+    border: none;
+    color: blanchedalmond;
+}
+
+ul{
+    padding: 10px 40px;
+}
+
+span{
+    position: absolute;
+    font-size: 15px;
+    right: 0;
+    /* border: 1px solid gray; */
+    border-radius: 50%;
+    color: rgb(197, 101, 101);
+}
+
+li::after{
+    width: 10px;
+    height: 10px;
+    background: url(check.png);
+    display: block;
+}
+
+li{
+    position: relative;
+    font-size: 15px;
+    color: whitesmoke;
+    cursor: pointer;
+    width: 350px;
+}
+
+hr{
+    width: 460px;
+    cursor: auto;
+    margin-inline-start: -60px;
+    margin-block-end: 20px;
+}
+
+li.change{
+    color: blue;
+    text-decoration: line-through;
+}
+
+li.changed::before{
+    background-image: url(check.png);
+}
